@@ -15,34 +15,39 @@
             margin-right: 0%;
         }
 
-        #map-button{
-            background-color: crimson;
-            border: 2px solid rgb(124, 12, 12);
+        /* Styling for the interactive map button */
+        #map-button {
+            background-color: #4B91C2;
+            border: 2px solid #4B91C2;
             border-radius: 15px;
-            height: 25px;
+            height: 35px;
             width: 125px;
         }
 
-        #map-button a{
+        /* Styling for the link inside the button */
+        #map-button a {
             text-decoration: none;
-            color: black;
+            color: #D9D1C1;
             font-weight: bold;
             font-size: 15px;
             padding: 5px;
         }
 
-        #map-button a:hover{
-            color: white;
+        /* Hover effect for the link inside the button */
+        #map-button a:hover {
+            color: #D4A548;
             text-decoration: underline;
         }
 
-        #map-button:hover{
-            background-color: rgb(223, 9, 9);
-            border: 2px solid rgb(211, 7, 7);
+        /* Hover effect for the button */
+        #map-button:hover {
+            background-color: #8B2E22;
+            border: 2px solid #8B2E22;
         }
     </style>
 </head>
 <body>
+    <!-- Header section with title and navigation links -->
     <header>
         <h1>
             <u><b>Treaty 1 - Simplified (Grade 4 - 8)</b></u>
@@ -64,12 +69,14 @@
             <a href="map.html" target="_self" aria-current="page">Map</a>
         </nav>
     </header>
+
+    <!-- Main content section -->
     <main>
         <div class="map-of-Treaty-1">
             <!-- Map description and instructions -->
-            <h4>
+            <h2>
                 <b><u>Below is the map of the world available to you to view the various treaties and territories.</u></b>
-            </h4>
+            </h2>
             <p>
                 <i>Use the search bar or zoom in on Manitoba to locate Treaty 1 territory.</i>
             </p>
@@ -87,14 +94,16 @@
             <sub>
                 <a href="sources.html">##3</a>
             </sub><br><br>
-            <p>Click the button below in order to go to the interactive map</p>
+            <!-- Interactive map button -->
+            <p>Click the button below in order to go to the interactive map;</p>
             <button id="map-button">
                 <a href="https://native-land.ca/" title="Interactive map of the world showing territories, languages and treaties">Explore...</a>
             </button>
         </div>
     </main>
+
+    <!-- Footer section -->
     <footer>
-        <!-- Footer with copyright and sources link -->
         <h4>
             &copy; All rights reserved by Nwaeleme Ugonna | Click 
             <a href="sources.html">here</a> to see sources

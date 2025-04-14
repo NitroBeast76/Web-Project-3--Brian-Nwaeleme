@@ -7,40 +7,51 @@
     <title>Treaty 1 - Simplified</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="CSS-Styles/styles-for-treaties.css">
+    <!-- Internal CSS -->
+    <style>
+        #lower-fort-garry img {
+            display: inline;
+            height: 30%;
+            width: 50%;
+            margin-left: 0px;
+        }
+
+        #lower-fort-garry figcaption {
+            display: inline;
+        }
+
+        #map-of-treaty-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #map-of-treaty-1 img {
+            flex-grow: 10px;
+            height: 20%;
+            width: 90%;
+        }
+
+        #communities-images {
+            display: flex;
+        }
+
+        #communities-images > figure img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #introduction p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<!-- Internal CSS-->
-<style>
-    #lower-fort-garry img {
-        display: inline;
-        height: 30%;
-        width: 50%;
-        margin-left: 0px;
-    }
-
-    #lower-fort-garry figcaption {
-        display: inline;
-    }
-
-    #map-of-treaty-1 img {
-        display: inline;
-        height: 20%;
-        width: 90%;
-    }
-
-    #communities-images {
-        display: flex;
-    }
-
-    #communities-images > figure img {
-        height: 100%;
-        width: 100%;
-    }
-</style>
 <body>
+    <!-- Header section with main heading and navigation bar -->
     <header>
-        <!-- Main heading of the webpage -->
         <h1><u><b>Treaty 1 - Simplified (Grade 4 - 8)</b></u></h1>
-        <!-- Navigation bar -->
         <nav>
             <!-- Search form -->
             <form>
@@ -53,29 +64,80 @@
             <a href="map.html" target="_self">Map</a>
         </nav>
     </header>
+
+    <!-- Main content of the webpage -->
     <main>
+        <!-- Section for detailed breakdown of Treaty 1 -->
         <section class="breakdown">
+            <!-- Introduction paragraph -->
+            <div id="introduction">
+                <p>
+                    Treaty 1, signed on August 3, 1871, was the first of the Numbered Treaties signed between the Canadian Government and the First Nations, at Lower Fort Garry, allowing for a relationship between the Government and Indigenous people, resulting in Canadian settlement and sovereignty over the land.
+                    <span>
+                        <sub>
+                            <a href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2">##2</a>
+                        </sub>
+                    </span>
+                </p>
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <!-- Article about the negotiation location -->
             <article id="negotiation-location">
-                <h2><u><b>Negotiation Location</b></u></h2>
-                <p>Treaty No. 1 was negotiated at Lower Fort Garry National Historic Site on August 3, 1871, providing a suitable area for the negotiations as for almost 1,000 Indigenous people and others. Below is an image of the location.<span><sub><a href="https://www.canada.ca/en/parks-canada/news/2020/07/government-of-canada-and-treaty-one-nation-commemorate-signing-of-treaty-no-1.html" title="Government of Canada and Treaty One Nation Commemorate Signing of Treaty No. 1">#1</a></sub></span></p>
-                <figure id="lower-fort-garry">
-                    <img src="Images-for-treaties/lower fort garry.jpg" alt="Lower Fort Garry National Historic Site">
-                    <figcaption><a href="https://www.travelmanitoba.com/directory/lower-fort-garry-national-historic-site-of-canada/" title="Lower Fort Garry National Historic Site">[1]</a></figcaption>
+                <h2><u><b>Where Was Treaty 1 Negotiated?</b></u></h2>
+                <ul>
+                    <li>Treaty 1 was negotiated at Lower Fort Garry National Historic Site on August 3, 1871.</li>
+                    <li>Over 1,000 Indigenous people gathered here along with some government officials to engage in the negotiations</li>
+                    <li>
+                        The area was a good place for neutral discussions.
+                        <span>
+                            <sub>
+                                <a href="https://www.canada.ca/en/parks-canada/news/2020/07/government-of-canada-and-treaty-one-nation-commemorate-signing-of-treaty-no-1.html" title="Government of Canada and Treaty One Nation Commemorate Signing of Treaty No. 1">#1</a>
+                            </sub>
+                        </span>
+                    </li>
+                </ul>
+                <figure id="lower-fort-garry"></figure>
+                    <img src="Images-for-treaties/lower fort garry.jpg" alt="Lower Fort Garry, site of Treaty 1 negotiations in 1871." title="Lower Fort Garry National Historic Site - Location of Treaty 1 negotiations">
+                    <figcaption>
+                        <a href="https://www.travelmanitoba.com/directory/lower-fort-garry-national-historic-site-of-canada/" title="Lower Fort Garry National Historic Site">[1]</a>
+                    </figcaption>
                 </figure>
-            </article><br><hr><br>
-            
+            </article>
+            <br>
+            <hr>
+            <br>
+
+            <!-- Article about Treaty 1 territory -->
             <div class="map-of-treaty-1">
-                <h2><u><b>Map of the Treaty 1 Area</b></u></h2>
-                <figure id="map-of-treaty-1">
-                    <img src="Images-for-treaties/map for map page.jpg" alt="Map of Treaty 1">
-                    <figcaption><a href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/" title="Map of Treaty 1">[2]</a></figcaption>
+                <h2><u><b>Where Is Treaty 1 Territory?</b></u></h2>
+                <ul>
+                    <li>The map below outlines the Treaty 1 territory and its whole geographical overview in Canada</li>
+                    <li>It depicts its rivers, key communities, roads, and landmarks.</li>
+                    <li>
+                        A larger, more interactive map would also be shown, depicting how Treaty 1 fits in Manitoba, Canada, North America and the whole world. To see more, go 
+                        <a href="map.html" title="Interactive map of the world showing territories, languages and treaties">here.</a>
+                    </li>
+                </ul>
+                <figure id="map-of-treaty-1"></figure>
+                    <img src="Images-for-treaties/map for map page.jpg" alt="Map showing Treaty 1 territory, including rivers, First Nation communities, and key landmarks in Manitoba." title="Map of Treaty 1 territory, including rivers, First Nation communities, and key landmarks in Manitoba.">
+                    <figcaption>
+                        <a href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/" title="Map of Treaty 1">[2]</a>
+                    </figcaption>
                 </figure>
-                <p>The image above depicts a map of Treaty 1, showing where the locations of the various Indigenous groups are located, its landmarks such as rivers, key locations and streets.</p>
-            </div><br><hr><br>
-            
+            </div>
+            <br>
+            <hr>
+            <br>
+
+            <!-- Article about communities and affiliations -->
             <article id="communities-and-affiliations">
-                <h2><u><b>Communities and Affiliations</b></u></h2>
-                <p>Seven communities were involved in Treaty 1, all are part of the Anishinaabe (Ojibwe) and Swampy Cree (Muskegon Cree) ethnic groups:</p>
+                <h2><u><b>Who Signed Treaty 1?</b></u></h2>
+                <p>
+                    The following First Nations communities totalling 7, were involved in Treaty 1. They are part of the Anishinaabe (Ojibwe) and Swampy Cree (Muskegon Cree) nations:
+                </p>
                 <ul>
                     <li>Peguis First Nation</li>
                     <li>Roseau River Anishinaabe First Nation</li>
@@ -83,64 +145,121 @@
                     <li>Sagkeeng First Nation</li>
                     <li>Long Plain First Nation</li>
                     <li>Sandy Bay Ojibway Nation</li>
-                    <li>Swan Lake First Nation <span><sub><a href="https://www.canada.ca/en/parks-canada/news/2020/07/government-of-canada-and-treaty-one-nation-commemorate-signing-of-treaty-no-1.html" title="Government of Canada and Treaty One Nation Commemorate Signing of Treaty No. 1">#2</a> & <a href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2" title="Treaties 1 and 2">#3</a></span></li>
+                    <li>
+                        Swan Lake First Nation 
+                        <span>
+                            <sub>
+                                <a href="https://www.canada.ca/en/parks-canada/news/2020/07/government-of-canada-and-treaty-one-nation-commemorate-signing-of-treaty-no-1.html" title="Government of Canada and Treaty One Nation Commemorate Signing of Treaty No. 1">#2</a> & 
+                                <a href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2" title="Treaties 1 and 2">#3</a>
+                            </sub>
+                        </span>
+                    </li>
                 </ul>
                 <div id="communities-images">
                     <figure>
-                        <img src="Images-for-treaties/signing.jpg" alt="Depiction of the negotiations of Treaty 1">
-                        <figcaption><a href="https://activehistory.ca/blog/2021/08/09/the-sesquicentennial-of-treaty-1/" title="Depiction of the negotiations of Treaty 1">[3]</a></figcaption>
+                        <img src="Images-for-treaties/signing.jpg" alt="Historical painting of Indigenous leaders and Canadian officials negotiating Treaty 1.">
+                        <figcaption></figcaption>
+                            <a href="https://activehistory.ca/blog/2021/08/09/the-sesquicentennial-of-treaty-1/" title="Historical painting of Indigenous leaders and Canadian officials negotiating Treaty 1.">[3]</a>
+                        </figcaption>
                     </figure>
                     <figure>
-                        <img src="Images-for-treaties/signing 2 .jpg" alt="Depiction of the negotiations of Treaty 1">
-                        <figcaption><a href="https://www.prints-online.com/pow-wow-black-feet-crossing-september-1881-4385369.html" title="Depiction of the negotiations of Treaty 1">[4]</a></figcaption>
+                        <img src="Images-for-treaties/signing 2 .jpg" alt="Illustration of a Treaty 1-era pow wow at Blackfoot Crossing, 1881.">
+                        <figcaption>
+                            <a href="https://www.prints-online.com/pow-wow-black-feet-crossing-september-1881-4385369.html" title="Illustration of a Treaty 1-era pow wow at Blackfoot Crossing, 1881.">[4]</a>
+                        </figcaption>
                     </figure>
                 </div>
-            </article><br><hr><br>
+            </article>
+            <br>
+            <hr>
+            <br>
 
-            <article id="terms">
-                <h2><u><b>Written Terms of Treaty 1</b></u></h2>
+            <!-- Article about the terms of Treaty 1 -->
+            <article id="terms"></article>
+                <h2><u><b>What Did Treaty 1 Include?</b></u></h2>
+                <br>
+                <h3><u><b>Written Terms of Treaty 1</b></u></h3>
                 <ol>
-                    <li>Reserve Lands: 160 acres per family of five (proportional for smaller or larger families) were given to each band. </li>
-                    <li>Gratuities and Annuities: Each person received 3 dollars as a one time payment, and a yearly payment of $15 per family of five. </li>
+                    <li>Reserve Lands: 160 acres per family of five (proportional for smaller or larger families) were given to each band.</li>
+                    <li>Gratuities and Annuities: Each person received 3 dollars as a one time payment, and a yearly payment of $15 per family of five.</li>
                     <li>Education: The Indigenous were promised education, and schools were built in the reserves.</li>
                     <li>Prohibition on the sale or introduction of liquor on reserves</li>
-                    <li>Cession of Land: The Indigenous were in turn asked to cede or surrender a massive portion of land of present day south-east and south-central Manitoba </li>
+                    <li>Cession of Land: The Indigenous were in turn asked to cede or surrender a massive portion of land of present day south-east and south-central Manitoba</li>
                 </ol>
-                <h2><u><b>Outside Promises of Treaty 1</b></u></h2>
+                <br>
+                <h3><u><b>Outside Promises of Treaty 1</b></u></h3>
                 <ol>
                     <li>Agricultural Tools: Agricultural animals like bulls, cows, etc and equipment like hoes, cutlasses etc were given to begin.</li>
                     <li>Hunting and Fishing: The Indigenous were allowed to hunt and fish in the area, as long as it was not on the land that was ceded.</li>
-                    <li>Protection: The Indigenous were promised protection from the Canadian Government, and that they would not be disturbed by settlers.</li>
-                </ol><span><sub><a href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2" title="Treaties 1 and 2">#4</a></sub></span>
-            </article><br><hr><br>
-        </section>
-
-        <section class="modern">
-            <article id="uniqueness">
-                <h2><b><u>Uniqueness ofTreaty 1</u></b></h2>
-                <ol>
-                    <li>It is the first Numbered Treaty, Post-Confederation. It stated teh formal treaty making, allocating and shaping Canada as a whole.</li>
-                    <li>The outside promises controversy also made oit very unique as it was one with many debates and arguments about the authenticity of oral statements.</li>
-                    <li>The amount of land given was smaller than what was demanded by the Indigenous leaders later, apart from Treaty 5</li>
-                    <li>The right to fish and hunt were not explicit</li>
-                    <li>It had cultural clashes as teh Canadian government meant total surrender while the Indigenous meant mutual sharing</li>
-                    <li>It greatly impacted later treaties <span><sub><a href="https://www.rcaanc-cirnac.gc.ca/eng/1360948213124/1544620003549" title="The Numbered Treaties (1871-1921)">#5</a></sub></span></li>
+                    <li>
+                        Protection: The Indigenous were promised protection from the Canadian Government, and that they would not be disturbed by settlers.
+                        <span>
+                            <sub>
+                                <a href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2" title="Treaties 1 and 2">#4</a>
+                            </sub>
+                        </span>
+                    </li>
                 </ol>
             </article>
+            <br>
+            <hr>
+            <br>
+        </section>
 
+        <!-- Section about modern implications of Treaty 1 -->
+        <section class="modern">
+            <!-- Article about the uniqueness of Treaty 1 -->
+            <article id="uniqueness">
+                <h2><b><u>Uniqueness of Treaty 1</u></b></h2>
+                <ol>
+                    <li>It is the first Numbered Treaty, Post-Confederation. It stated the formal treaty making, allocating and shaping Canada as a whole.</li>
+                    <li>The outside promises controversy also made it very unique as it was one with many debates and arguments about the authenticity of oral statements.</li>
+                    <li>The amount of land given was smaller than what was demanded by the Indigenous leaders later, apart from Treaty 5</li>
+                    <li>The right to fish and hunt were not explicit</li>
+                    <li>It had cultural clashes as the Canadian government meant total surrender while the Indigenous meant mutual sharing</li>
+                    <li>
+                        It greatly impacted later treaties 
+                        <span>
+                            <sub>
+                                <a href="https://www.rcaanc-cirnac.gc.ca/eng/1360948213124/1544620003549" title="The Numbered Treaties (1871-1921)">#5</a>
+                            </sub>
+                        </span>
+                    </li>
+                </ol>
+            </article>
+            <br>
+            <hr>
+            <br>
+
+            <!-- Article about the implementation of Treaty 1 -->
             <article id="implementation">
                 <h2><b><u>Implementation of Treaty 1</u></b></h2>
                 <ul>
-                    <li>Kapyong Urban Reserve: This urban reserve in 2019 is an example of this treaty, as it is under this treaty that the Treaty 1 nations acquired and are developing the Kapyong Barracks into an urban reserve</li>
-                    <li>Naawi-Oodena Urban Reserve: This urban reserve is similar to the Kapyong Urban Reserve as the Treaty 1 Nations are also massively developing them to become urban, metropolitan areas.</li>
-                    <li>Economic and Urban Development: Treaty 1 nations are striving hard and increasing their opportunities for their future generations, through their commercial and economic activities, establishing businesses all around their reserves and building urban reserves like Kapyong and Naawi-Oodena</li>
-                    <li>Organizations like Treaty One Development Corporation are responsible and implement the treaty by acquiring land to sign under the treaty as reserves <span><sub><a href="https://treaty1.ca/t1dc/">#6</a> <a href="https://treaty1.ca/block-a-groundbreaking-2023/#:~:text=%E2%80%9CAfter%2020%20years%20of%20prolonged,a%20prosperous%20and%20sustainable%20future.">#7</a></sub></span></li>
+                    <li>
+                        Kapyong Urban Reserve: This urban reserve in 2019 is an example of this treaty, as it is under this treaty that the Treaty 1 nations acquired and are developing the Kapyong Barracks into an urban reserve
+                    </li>
+                    <li>
+                        Naawi-Oodena Urban Reserve: This urban reserve is similar to the Kapyong Urban Reserve as the Treaty 1 Nations are also massively developing them to become urban, metropolitan areas.
+                    </li>
+                    <li>
+                        Economic and Urban Development: Treaty 1 nations are striving hard and increasing their opportunities for their future generations, through their commercial and economic activities, establishing businesses all around their reserves and building urban reserves like Kapyong and Naawi-Oodena
+                    </li>
+                    <li>
+                        Organizations like Treaty One Development Corporation are responsible and implement the treaty by acquiring land to sign under the treaty as reserves 
+                        <span>
+                            <sub>
+                                <a href="https://treaty1.ca/t1dc/">#6</a> 
+                                <a href="https://treaty1.ca/block-a-groundbreaking-2023/#:~:text=%E2%80%9CAfter%2020%20years%20of%20prolonged,a%20prosperous%20and%20sustainable%20future.">#7</a>
+                            </sub>
+                        </span>
+                    </li>
                 </ul>
             </article>
         </section>
     </main>
+
+    <!-- Footer section -->
     <footer>
-        <!-- Footer content with copyright and source link -->
         <h4>
             &copy; All rights reserved by Nwaeleme Ugonna | Click 
             <a href="sources.html" aria-label="View sources">here</a> to see sources
