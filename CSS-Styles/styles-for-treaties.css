@@ -1,0 +1,163 @@
+/* Style for the body element */
+body {
+    background-color: burlywood; /* Sets the background color of the page */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+/* Style for the header element */
+header {
+    background-color: darkred; /* Sets the background color of the header */
+    padding: 20px 50px; /* Adds padding inside the header */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Distributes items evenly with space between them */
+    text-align: center; /* Centers text inside the header */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Sets the font family */
+    display: flex; /* Uses flexbox layout */
+    border: 2px solid gray; /* Adds a gray border around the header */
+}
+
+/* Style for the nav element */
+nav {
+    font-size: larger; /* Increases font size */
+    display: flex; /* Uses flexbox layout */
+    padding: 20px; /* Adds padding inside the nav */
+    justify-content: space-between; /* Distributes items evenly with space between them */
+    align-items: center; /* Centers items vertically */
+}
+
+/* Style for anchor tags inside nav */
+nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Sets text color to black */
+    margin-left: 20px; /* Adds left margin to space out links */
+}
+
+/* Style for form content inside nav */
+nav form #content {
+    height: 30px; /* Sets height of the form content */
+    border: 2px solid grey; /* Adds a gray border */
+}
+
+/* Hover effect for anchor tags inside nav */
+nav a:hover {
+    color: lightyellow; /* Changes text color on hover */
+    text-decoration: underline; /* Underlines text on hover */
+}
+
+/* Style for the main element */
+main {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Sets the font family */
+    color: rgb(51, 49, 49); /* Sets text color */
+    font-size: medium; /* Sets font size */
+    padding: 20px; /* Adds padding inside the main element */
+    margin: 10px; /* Adds margin around the main element */
+}
+
+/* Style for anchor tags inside sub elements */
+sub a {
+    display: inline; /* Displays links as inline elements */
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Sets text color to black */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Sets the font family */
+}
+
+/* Hover effect for anchor tags inside sub elements */
+sub a:hover {
+    color: red; /* Changes text color on hover */
+}
+
+main h1 {
+    font-size: xx-large; /* Increases font size */
+    font-weight: bold; /* Makes text bold */
+}
+
+main h3 {
+    font-size: xx-large; /* Increases font size */
+    font-weight: bold; /* Makes text bold */
+}
+
+/* Style for h4 elements inside main */
+main h4 {
+    font-size: x-large; /* Increases font size */
+    font-weight: bold; /* Makes text bold */
+}
+
+main p {
+    font-size: large; /* Increases font size */
+}
+
+/* Style for button elements */
+button {
+    background-color: rgb(243, 237, 244); /* Sets background color */
+    border: 2px solid white; /* Adds a white border */
+    color: black; /* Sets text color to black */
+}
+
+/* Hover effect for button elements */
+button:hover {
+    color: red; /* Changes text color on hover */
+}
+
+/* Style for anchor tags inside figcaption */
+figcaption a {
+    font-style: italic; /* Italicizes text */
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Sets text color to black */
+    margin-right: 5px; /* Adds right margin to space out links */
+    display: flex; /* Uses flexbox layout */
+}
+
+/* Hover effect for anchor tags inside figcaption */
+figcaption a:hover {
+    color: red; /* Changes text color on hover */
+}
+
+/* Style for the footer element */
+footer {
+    text-align: center; /* Centers text inside the footer */
+    font-size: medium; /* Sets font size */
+    font-family: cursive; /* Sets the font family */
+    background-color: tan; /* Sets background color */
+    padding: 60px; /* Adds padding inside the footer */
+    margin: 0px; /* Removes default margin */
+    height: 10%; /* Sets height of the footer */
+}
+
+/* Style for h4 elements inside footer */
+footer h4 {
+    display: inline; /* Displays text inline */
+    color: rgb(2, 76, 172); /* Sets text color */
+    font-size: medium; /* Sets font size */
+}
+
+/* Style for anchor tags inside h4 elements in footer */
+footer h4 a {
+    display: inline; /* Displays links inline */
+    color: rgb(2, 76, 172); /* Sets text color */
+}
+
+/* Hover effect for anchor tags inside h4 elements in footer */
+footer h4 a:hover {
+    color: aliceblue; /* Changes text color on hover */
+    text-decoration: underline; /* Underlines text on hover */
+}
+
+/* Style for hr elements */
+hr {
+    border: 1px solid black; /* Sets border color and width */
+}
+
+table, th, td {
+    border: 1px solid rgb(12, 11, 11); /* Sets border color and width */
+    border-collapse: collapse; /* Collapses table borders */
+    padding: 10px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Style for table header and table data cells */
+th, td {
+    background-color: white; /* Sets the background color of table cells to white */
+}

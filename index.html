@@ -1,0 +1,127 @@
+<!--
+Name:  Nwaeleme Ugonna Brian
+
+Course: Web Dev 10S (PTEC) P6  
+
+Teacher:  Ms. Hoitink
+
+School:  Pembina Trails Collegiate
+
+Date Last Modified:   3/11/2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and title of the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treaty 1 - Simplified</title>
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="CSS-Styles/styles-for-treaties.css">
+    
+    <!-- Internal CSS for specific styles -->
+    <style>
+
+        /* Styling for the map section */
+        #home-maps figure, img {
+            display: flex;
+            height: 30%;
+            width: 70%;
+            flex-wrap: wrap;
+        }
+
+        /* Styling for captions and links */
+        #home-maps figcaption, a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+        }
+
+        /* Hover effect for links in captions */
+        #home-maps figcaption a:hover {
+            color: honeydew;
+        }
+
+        /* Styling for the actual map image */
+        #home-maps-actual-map img {
+            display: block;
+        }
+
+        /* Hover effect for general links in paragraphs */
+        p a:hover {
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Main heading of the webpage -->
+        <h1>
+            <u><b>Treaty 1 - Simplified (Grade 4 - 8)</b></u>
+        </h1>
+        
+        <!-- Navigation bar -->
+        <nav>
+            <!-- Search form -->
+            <form>
+                <label for="content"></label>
+                <input type="search" id="content" name="content" placeholder="Search" aria-label="Search the site">
+            </form>
+            <!-- Navigation links -->
+            <a href="index.html" target="_self">Home</a>
+            <a href="dissection.html" target="_self">Details</a>
+            <a href="map.html" target="_self">Map</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Subheading for the main content -->
+        <h4>
+            <b><u>Welcome to Treaty 1 - Simplified (Grade 4 - 8)</u></b>
+        </h4>
+        
+        <!-- Introduction paragraph -->
+        <p>
+            Treaty 1 was signed on August 3 1871, at Lower Fort Garry, was the first of the Numbered Treaties and fostered the creation of Manitoba as a whole. It was agreed upon by the Canadian Government and the Anishinabek and Swampy Cree peoples of southern Manitoba who both had different goals as a whole. The Canadian Government wanted land for expansion and to settle colonists, while the Indigenous were pursuing their survival and protection of their culture for their descendants. 
+            <!-- Source for this info -->
+            <sub><a href="sources.html">#1</a></sub>
+        </p>
+        
+        <!-- List of topics to be discussed -->
+        <p>We will be discussing:</p>
+        <ul>
+            <li>Where the Treaty was negotiated and a picture of the location of the negotiation?</li>
+            <li>A map of the Treaty area displayed.</li>
+            <li>See the Treaty map in context, meaning, a bigger map with a coloured chunk showing where this Treaty territory is.</li>
+            <li>What communities are involved and what their ethnic affiliation is or what Nation they’re from.</li>
+            <li>What are the historic terms of the Treaty, meaning what was included in the Treaty (ex. the outside promises, how much land each family of five were to receive, etc.).</li>
+            <li>What makes this Treaty different from other Treaties in Canada.</li>
+            <li>How is the Treaty being implemented today. For example, information about urban reserves (ex. Kapyong Urban Reserve, Long Plain First Nations Gas Station, etc.) or economic development in Treaty communities.</li>
+        </ul>
+        
+        <!-- Map section with description -->
+        <p>The map of the treaties is below, including a description of Treaty One:</p>
+        <div id="home-maps">
+            <figure>
+                <!-- Map image -->
+                <img 
+                    src="Images-for-treaties/map 2 better.jpg" 
+                    alt="Another map of the Numbered Treaties, talking about Treaty 1" 
+                    id="home-maps-actual-map">
+                <!-- Caption with external link -->
+                <figcaption>
+                    <a href="https://scoinc.mb.ca/treaties/" target="_blank" aria-label="Visit SCO Treaty Information">[1]</a>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer content with copyright and source link -->
+        <h4>
+            &copy; All rights reserved by Nwaeleme Ugonna | Click 
+            <a href="sources.html" aria-label="View sources">here</a> to see sources
+        </h4>
+    </footer>
+</body>
+</html>
