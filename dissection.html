@@ -279,37 +279,90 @@
         <hr>
         <br>
 
+        <!-- Contact Form Section -->
         <div id="contact-form" aria-labelledby="contact-form-heading">
             <h2 id="contact-form-heading">Contact Us and Suggestions</h2>
-            <p>If you have any suggestions or feedback, please fill out the form below with your contact information and advice. We value your input and look forward to hearing from you!</p>
+            <p>
+            If you have any suggestions or feedback, please fill out the form below with your contact information and advice. 
+            We value your input and look forward to hearing from you!
+            </p>
             <fieldset id="contact-form-fieldset">
             <legend>Suggestion Form</legend>
             <form aria-describedby="contact-form-description">
                 <p id="contact-form-description">Please complete all required fields marked with an asterisk (*).</p>
 
                 <label for="name">Name: <span aria-hidden="true">*</span></label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-required="true" aria-label="Enter your full name"><br><br>
+                <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Enter your full name" 
+                required 
+                aria-required="true" 
+                aria-label="Enter your full name"
+                ><br><br>
 
                 <label for="email">Email: <span aria-hidden="true">*</span></label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email address" required aria-required="true" aria-label="Enter your email address"><br><br>
+                <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email address" 
+                required 
+                aria-required="true" 
+                aria-label="Enter your email address"
+                ><br><br>
 
                 <label for="subject">Subject: <span aria-hidden="true">*</span></label><br>
-                <input type="text" id="subject" name="subject" placeholder="Enter the subject of your message" required aria-required="true" aria-label="Enter the subject of your message"><br><br>
+                <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                placeholder="Enter the subject of your message" 
+                required 
+                aria-required="true" 
+                aria-label="Enter the subject of your message"
+                ><br><br>
 
                 <label for="message">Message: <span aria-hidden="true">*</span></label><br>
-                <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your message here..." required aria-required="true" aria-label="Write your message here"></textarea><br><br>
+                <textarea 
+                id="message" 
+                name="message" 
+                rows="6" 
+                cols="50" 
+                placeholder="Write your message here..." 
+                required 
+                aria-required="true" 
+                aria-label="Write your message here"
+                ></textarea><br><br>
 
                 <label for="contact-method">Preferred Contact Method: <span aria-hidden="true">*</span></label><br>
-                <select id="contact-method" name="contact-method" required aria-required="true" aria-label="Select your preferred contact method">
+                <select 
+                id="contact-method" 
+                name="contact-method" 
+                required 
+                aria-required="true" 
+                aria-label="Select your preferred contact method"
+                >
                 <option value="" disabled selected>Select an option</option>
                 <option value="email">Email</option>
                 <option value="phone">Phone</option>
                 </select><br><br>
 
                 <label for="phone">Phone Number (optional):</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" aria-label="Enter your phone number (optional)"><br><br>
+                <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="Enter your phone number" 
+                aria-label="Enter your phone number (optional)"
+                ><br><br>
 
-                <input type="submit" value="Submit" aria-label="Submit your suggestion form">
+                <input 
+                type="submit" 
+                value="Submit" 
+                aria-label="Submit your suggestion form"
+                >
             </form>
             </fieldset>
         </div>
