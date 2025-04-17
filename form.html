@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treaty 1 - Simplified</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="CSS-Styles/styles-for-treaties.css">
+    <style>
+        /* Styling for fieldset */
+        fieldset {
+            border: 2px solid #8B2E22; /* Sets the border color to the primary color */
+            padding: 20px; /* Adds padding inside the fieldset */
+            margin: 20px; /* Adds margin around the fieldset */
+        }
+
+        /* Styling for legend */
+        legend {
+            font-size: 1.6rem; /* Sets the font size */
+            color: #8B2E22; /* Sets the text color to the primary color */
+            font-weight: bold; /* Makes the text bold */
+        }
+
+        /* Styling for form labels */
+        form > label {
+            font-size: 1.6rem; /* Sets the font size */
+            color: #2F2F2F; /* Sets the text color to a neutral tone */
+            margin-right: 10px; /* Adds spacing to the right of the label */
+        }
+
+        /* Styling for text input fields */
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"] {
+            border: 2px solid #8B2E22; /* Adds a border around the input */
+            padding: 2px; /* Adds padding inside the input */
+            font-size: 1.6rem; /* Sets the font size */
+            color: #2F2F2F; /* Sets the text color to a neutral tone */
+        }
+
+        /* Styling for textarea */
+        form textarea {
+            width: 100%; /* Sets the width to 100% of the parent element */
+            height: 200px; /* Sets the height of the textarea */
+            border: 2px solid #8B2E22; /* Adds a border around the textarea */
+            padding: 10px; /* Adds padding inside the textarea */
+            font-size: 1.6rem; /* Sets the font size */
+            color: #2F2F2F; /* Sets the text color to a neutral tone */
+        }
+
+        /* Styling for submit button */
+        form input[type="submit"] {
+            border: 2px solid #4B91C2; /* Adds a border around the button */
+            text-decoration: none; /* Removes underline from the button text */
+            color: #D9D1C1; /* Sets the text color to a neutral tone */
+            font-weight: bold; /* Makes the text bold */
+            font-size: 15px; /* Sets the font size */
+            padding: 5px; /* Adds padding inside the button */
+            background-color: #4B91C2; /* Sets the background color */
+            border-radius: 15px; /* Rounds the corners of the button */
+            height: 35px; /* Sets the height of the button */
+            width: 125px; /* Sets the width of the button */
+        }
+
+        /* Styling for submit button hover effect */
+        form input[type="submit"]:hover {
+            background-color: #8B2E22; /* Changes the background color on hover */
+            border: 2px solid #8B2E22; /* Changes the border color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header with title and navigation -->
+        <a href="index.html" target="_self">
+            <h1>
+                <u><b>Treaty 1 - Simplified (Grade 4 - 8)</b></u>
+            </h1>
+        </a>
+        
+        <!-- Navigation bar -->
+        <nav>
+            <!-- Search form -->
+            <form>
+                <label for="content"></label>
+                <input type="search" id="content" name="content" placeholder="Search ...">
+            </form>
+            
+            <!-- Navigation links -->
+            <a href="index.html" target="_self">Home</a>
+            <a href="dissection.html" target="_self">Details</a>
+            <a href="map.html" target="_self">Map</a>
+            <a href="form.html" target="_self">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Form Section -->
+        <div id="contact-form" aria-labelledby="contact-form-heading">
+            <h2 id="contact-form-heading">Contact Us and Suggestions</h2>
+            <p>
+                If you have any suggestions or feedback, please fill out the form below with your contact information and advice. 
+                We value your input and look forward to hearing from you!
+            </p>
+            <fieldset id="contact-form-fieldset">
+                <legend>Suggestion Form</legend>
+                <form aria-describedby="contact-form-description">
+                    <p id="contact-form-description">Please complete all required fields marked with an asterisk (*).</p>
+
+                    <!-- Name field -->
+                    <label for="name">Name: <span aria-hidden="true">*</span></label><br>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Enter your full name" 
+                        required 
+                        aria-required="true" 
+                        aria-label="Enter your full name"
+                    ><br><br>
+
+                    <!-- Email field -->
+                    <label for="email">Email: <span aria-hidden="true">*</span></label><br>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email address" 
+                        required 
+                        aria-required="true" 
+                        aria-label="Enter your email address"
+                    ><br><br>
+
+                    <!-- Subject field -->
+                    <label for="subject">Subject: <span aria-hidden="true">*</span></label><br>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        placeholder="Enter the subject of your message" 
+                        required 
+                        aria-required="true" 
+                        aria-label="Enter the subject of your message"
+                    ><br><br>
+
+                    <!-- Message field -->
+                    <label for="message">Message: <span aria-hidden="true">*</span></label><br>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="6" 
+                        cols="50" 
+                        placeholder="Write your message here..." 
+                        required 
+                        aria-required="true" 
+                        aria-label="Write your message here"
+                    ></textarea><br><br>
+
+                    <!-- Preferred contact method -->
+                    <label for="contact-method">Preferred Contact Method: <span aria-hidden="true">*</span></label><br>
+                    <select 
+                        id="contact-method" 
+                        name="contact-method" 
+                        required 
+                        aria-required="true" 
+                        aria-label="Select your preferred contact method"
+                    >
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select><br><br>
+
+                    <!-- Phone number field -->
+                    <label for="phone">Phone Number (optional):</label><br>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="Enter your phone number" 
+                        aria-label="Enter your phone number (optional)"
+                    ><br><br>
+
+                    <!-- Submit button -->
+                    <input 
+                        type="submit" 
+                        value="Submit" 
+                        aria-label="Submit your suggestion form"
+                    >
+                </form>
+            </fieldset>
+        </div>
+    </main>
+</body>
+</html>
